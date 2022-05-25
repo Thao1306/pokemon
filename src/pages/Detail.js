@@ -16,14 +16,14 @@ function Detail() {
     const summaryRef = useRef();
     const navigate = useNavigate()
     useEffect(() => {
-        const id = window.location.pathname.slice(8)
+        const id = window.location.pathname.slice(16)
         axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`).then((res) => {
             setPoke(res.data)
         }).catch((err) => {
             console.log(err);
             navigate('*')
         })
-    });
+    }, []);
     const { name, sprites, weight, height, types, stats, abilities, base_experience } = poke
     useEffect(() => {
         if (stats) {
