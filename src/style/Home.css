@@ -1,0 +1,160 @@
+.rock {
+    background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
+}
+.ghost {
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+.electric {
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+}
+.bug {
+    background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+}
+.poison {
+    background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
+}
+.normal {
+    background-image: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
+}
+.fairy {
+    background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+}
+.fire {
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+.grass {
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+}
+.water {
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+}
+.ground {
+    background-image: linear-gradient(315deg, #772f1a 0%, #f2a65a 74%);
+}
+.psychic {
+    background-image: linear-gradient(315deg, #f3e071 0%,  #fcf7db 100%);
+}
+.steel {
+    background-image: linear-gradient(315deg, #e9e8e7 0%,  #a6a59d 100%);
+}
+.fighting {
+    background-image: linear-gradient(315deg, #ff9999 0%,  #f08422 100%);
+}
+.ice {
+    background-image: linear-gradient(315deg, #cff3fa 0%,  #5fa3cd 100%);
+}
+.dragon {
+    background-image: linear-gradient(315deg, #d6f1e0 0%,  #58af8a 100%);
+}
+.dark {
+    background-image: linear-gradient(315deg, #94958d 0%,  #71715f 100%);
+}
+.flying {
+    background-image: linear-gradient(315deg, #338864 0%,  #448833 100%);
+}
+
+dl {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    min-height: 50px;
+    margin-bottom: 0 !important;
+}
+.dl-last {
+    height: 80px;
+}
+dt {
+    width: 30%;
+    text-transform: capitalize;
+}
+dd {
+    width: calc(100% - 30% - 0.5rem);
+    /* white-space: nowrap; */
+          /* display:inline-block; */
+          overflow: hidden;
+          text-overflow: ellipsis;
+          -webkit-line-clamp: 3;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          white-space: normal;
+    text-transform: capitalize;
+
+}
+.card-content {
+    padding: 1rem 1rem 0;
+}
+.card-item {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 0;
+    border: 1px solid #efefef;
+    border-radius: 2rem;
+    min-width: 160px;
+    box-shadow: 0 3px 15px rgb(0 0 0 / 9%);
+    margin-bottom: 2rem;
+}
+.card-img {
+    width: 100%;
+    height: 250px;
+
+}
+.card-img img {
+    width: 80%;
+    height: 100%;
+}
+.button {
+    display: inline-block;
+    color: #000;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    border: none;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.75rem;
+    /* transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; */
+    transition: all ease-in-out 0.5s;
+}
+.button:hover {
+    transform: scale(110%);
+}
+.button-detail {
+    background-color: #fff;
+    color: #000;
+
+}
+.button.search {
+    background-color: #000;
+    color: #fff;
+
+}
+.to-top {
+    position: fixed; 
+    width: auto;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    font-size: 3rem;
+    z-index: 1;
+    cursor: pointer;
+    color: green;
+    
+}
+.to-bottom {
+    position: fixed; 
+    width: auto;
+    right: 30px;
+    bottom: 8px;
+    height: auto;
+    font-size: 3rem;
+    z-index: 1;
+    cursor: pointer;
+    color: green;
+    transform: rotateX(180deg);
+    
+}

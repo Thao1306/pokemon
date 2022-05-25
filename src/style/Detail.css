@@ -1,0 +1,16 @@
+.detail {
+    min-height: 100vh;
+}
+.detail h2 {
+    text-transform: uppercase;
+}
+.card-content dd{
+    overflow: auto;
+    -webkit-line-clamp: unset
+}
+.detail-img img{
+    width: 80%;
+}
+.tag .button {
+    color: #000;
+}
