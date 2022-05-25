@@ -9,17 +9,22 @@ import {
   Route,
   Routes
 } from "react-router-dom";
+import { unstable_HistoryRouter as HistoryRouter } from "react-router-dom";
+import { createBrowserHistory } from "history";
 import NoMatch from "./pages/NoMatch";
 
+const history = createBrowserHistory({ window });
+
 function App() {
+  console.log(history);
   return (
-    <HashRouter basename="/pokemon">
+    <HistoryRouter history={history} basename='pokemon'>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="detail/:id" element={<Detail />} />
         <Route path="*" element={<NoMatch />} />
       </Routes>
-    </HashRouter>
+    </HistoryRouter>
   );
 }
 
